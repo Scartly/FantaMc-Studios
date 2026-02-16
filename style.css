@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: white;
+}
+
+header {
+  background: #ff6600;
+  padding: 25px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.foro {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.categoria {
+  background: #1e1e1e;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.categoria:hover {
+  background: #ff6600;
+  transform: scale(1.03);
+}
+
+.volver {
+  display: block;
+  margin: 20px;
+  color: #ff6600;
+  text-decoration: none;
+}
