@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FantaMC - Survival Grands</title>
+<title>Survival Grands</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111;
+    background: #0f0f0f;
     color: white;
 }
 
@@ -25,7 +25,6 @@ nav a {
     text-decoration: none;
     margin: 0 20px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -50,6 +49,7 @@ nav a:hover {
 .spawn-box h1 {
     font-size: 45px;
     color: orange;
+    text-shadow: 0 0 15px orange;
 }
 
 /* BOTON DISCORD */
@@ -57,7 +57,7 @@ nav a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #5865F2; /* Color oficial Discord */
+    background: #5865F2;
     padding: 15px 30px;
     border-radius: 10px;
     color: white;
@@ -77,35 +77,76 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* SECCIONES */
+/* STAFF */
 section {
     padding: 80px 20px;
     text-align: center;
 }
 
-.team-box {
-    background: #1e1e1e;
-    padding: 40px;
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.staff-card {
+    background: #1c1c1c;
+    padding: 30px;
     border-radius: 15px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.8;
+    width: 220px;
+    transition: 0.3s;
+    border: 2px solid transparent;
 }
 
-.team-box h2 {
-    color: orange;
+.staff-card:hover {
+    transform: translateY(-10px) scale(1.05);
 }
 
-.team-box p {
-    font-size: 18px;
+/* Rangos */
+.owner {
+    border: 2px solid gold;
+    box-shadow: 0 0 20px gold;
+}
+
+.admin {
+    border: 2px solid red;
+    box-shadow: 0 0 15px red;
+}
+
+.gestion {
+    border: 2px solid deepskyblue;
+    box-shadow: 0 0 15px deepskyblue;
+}
+
+.mod {
+    border: 2px solid orange;
+    box-shadow: 0 0 15px orange;
+}
+
+.support {
+    border: 2px solid limegreen;
+    box-shadow: 0 0 15px limegreen;
+}
+
+.staff-card img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.staff-card h3 {
+    margin: 15px 0 5px;
 }
 
 .recordatorio {
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 20px;
     background: #2c2c2c;
     border-left: 5px solid red;
     border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
 </head>
@@ -113,65 +154,81 @@ section {
 <body>
 
 <nav>
-    <a href="index.html">Inicio</a>
-    <a href="reglas.html">Reglas</a>
-    <a href="anuncios.html">Anuncios</a>
-    <a href="reportes.html">Reportes</a>
-    <a href="apelaciones.html">Apelaciones</a>
+    <a href="#">Inicio</a>
+    <a href="#">Reglas</a>
+    <a href="#">Anuncios</a>
+    <a href="#">Reportes</a>
+    <a href="#">Apelaciones</a>
 </nav>
 
-<!-- PRESENTACIÓN -->
 <div class="spawn-section">
     <div class="spawn-box">
-
         <h1>⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️</h1>
-
-        <p><strong>Donde la estrategia y la fuerza definen tu legado.</strong></p>
-
-        <p>
-        Survival Grands no es solo un servidor; es un campo de batalla donde los clanes más poderosos 
-        luchan por la gloria, el control del territorio y el dominio del Top.
-        </p>
-
-        <p><strong>🌟 ¿QUÉ TE ESPERA?</strong></p>
-
-        <p>
-        🛡️ Guerra de Clanes Extrema<br>
-        🚩 KOTHs Desafiantes<br>
-        ⚖️ Transparencia y Justicia<br>
-        💰 Economía Equilibrada
-        </p>
-
-        <p><em>"Muchos entran, pero solo los más grandes sobreviven."</em></p>
+        <p>Donde la estrategia y la fuerza definen tu legado.</p>
 
         <a href="https://discord.gg/G7j5jhPv" target="_blank" class="discord-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
             ¡Únete a nuestro Discord!
         </a>
-
     </div>
 </div>
 
-<!-- EQUIPO -->
 <section>
-    <div class="team-box">
 
-        <h2>🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
+<h2 style="color:orange;">🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
 
-        <p>👑 <strong>OWNER:</strong> triqqew — Dirección General.</p>
-        <p>⚙️ <strong>ADMIN:</strong> dunv — Sistemas y Soporte Técnico.</p>
-        <p>📋 <strong>GESTIÓN:</strong> Scartleth — Eventos y Orden Interno.</p>
-        <p>⚔️ <strong>MOD:</strong> vDamage — Sanciones y Vigilancia.</p>
-        <p>🎫 <strong>SUPPORT:</strong> Jhoaraly — Atención al Usuario.</p>
+<div class="staff-container">
 
-        <div class="recordatorio">
-            ⚠️ <strong>RECUERDA:</strong> Reportes y apelaciones únicamente vía Ticket.  
-            El Staff nunca pedirá tus datos personales.
-        </div>
-
+    <div class="staff-card owner">
+        <img src="https://crafatar.com/avatars/triqqew?size=100&overlay">
+        <h3>👑 triqqew</h3>
+        <p>OWNER</p>
     </div>
+
+    <div class="staff-card admin">
+        <img src="https://crafatar.com/avatars/dunv?size=100&overlay">
+        <h3>dunv</h3>
+        <p>ADMIN</p>
+    </div>
+
+    <div class="staff-card gestion">
+        <img src="https://crafatar.com/avatars/Scartleth?size=100&overlay">
+        <h3>Scartleth</h3>
+        <p>GESTIÓN</p>
+    </div>
+
+    <div class="staff-card mod">
+        <img src="https://crafatar.com/avatars/vDamage?size=100&overlay">
+        <h3>vDamage</h3>
+        <p>MOD</p>
+    </div>
+
+    <div class="staff-card support">
+        <img src="https://crafatar.com/avatars/Jhoaraly?size=100&overlay">
+        <h3>Jhoaraly</h3>
+        <p>SUPPORT</p>
+    </div>
+
+    <div class="staff-card support">
+        <img src="https://crafatar.com/avatars/AscanIsBack?size=100&overlay">
+        <h3>AscanIsBack</h3>
+        <p>SUPPORT</p>
+    </div>
+
+    <div class="staff-card support">
+        <img src="https://crafatar.com/avatars/x4sp_?size=100&overlay">
+        <h3>x4sp_</h3>
+        <p>SUPPORT</p>
+    </div>
+
+</div>
+
+<div class="recordatorio">
+⚠️ <strong>RECUERDA:</strong> Reportes y apelaciones únicamente vía Ticket.  
+El Staff nunca pedirá tus datos personales.
+</div>
+
 </section>
 
 </body>
 </html>
-
