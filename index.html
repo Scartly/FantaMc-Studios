@@ -32,16 +32,24 @@ nav a:hover {
     color: orange;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(90deg, orange, red);
-    padding: 50px;
+/* HEADER SPAWN */
+.spawn-section {
+    background: url('fantamcspawn.png') center/cover no-repeat;
+    padding: 170px 20px;
     text-align: center;
 }
 
-header h1 {
+.spawn-box {
+    background: rgba(0,0,0,0.75);
+    display: inline-block;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.spawn-box h1 {
     margin: 0;
     font-size: 50px;
+    color: orange;
 }
 
 /* BOTON DISCORD */
@@ -68,10 +76,13 @@ section {
     text-align: center;
 }
 
-.server-img {
-    width: 300px;
-    border-radius: 15px;
-    margin-top: 20px;
+/* MODALIDAD */
+.modalidad {
+    font-size: 22px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 /* STAFF */
@@ -105,15 +116,6 @@ section {
     margin: 5px 0;
     color: orange;
 }
-
-/* MODALIDAD */
-.modalidad {
-    font-size: 22px;
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-}
 </style>
 </head>
 
@@ -121,4 +123,28 @@ section {
 
 <!-- MENU -->
 <nav>
-    <a href="index.html">Inicio<
+    <a href="index.html">Inicio</a>
+    <a href="reglas.html">Reglas</a>
+    <a href="anuncios.html">Anuncios</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="apelaciones.html">Apelaciones</a>
+</nav>
+
+<!-- BANNER SPAWN -->
+<div class="spawn-section">
+    <div class="spawn-box">
+        <h1>🍊 FantaMC</h1>
+        <p>Servidor PvP - Survival Grands</p>
+        <p><strong>IP:</strong> play.fantamc.com</p>
+
+        <a href="https://discord.gg/TUINVITE" target="_blank" class="discord-btn">
+            🔗 Unirse al Discord
+        </a>
+    </div>
+</div>
+
+<!-- MODALIDAD -->
+<section>
+    <h2>⚔ Modalidad Activa</h2>
+    <div class="modalidad">
+        PvP C
