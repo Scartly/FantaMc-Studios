@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FantaMC</title>
+<title>FantaMC - Survival Grands</title>
 
 <style>
 body {
@@ -32,27 +32,27 @@ nav a:hover {
     color: orange;
 }
 
-/* HEADER SPAWN */
+/* BANNER */
 .spawn-section {
     background: url('fantamcspawn.png') center/cover no-repeat;
-    padding: 170px 20px;
+    padding: 200px 20px;
     text-align: center;
 }
 
 .spawn-box {
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.85);
     display: inline-block;
-    padding: 40px;
+    padding: 50px;
     border-radius: 15px;
+    max-width: 900px;
 }
 
 .spawn-box h1 {
-    margin: 0;
-    font-size: 50px;
+    font-size: 45px;
     color: orange;
 }
 
-/* BOTON DISCORD */
+/* BOTON */
 .discord-btn {
     display: inline-block;
     background: orange;
@@ -61,7 +61,7 @@ nav a:hover {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 25px;
     transition: 0.3s;
 }
 
@@ -70,58 +70,41 @@ nav a:hover {
     color: white;
 }
 
-/* SECTIONS */
+/* SECCIONES */
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
-/* MODALIDAD */
-.modalidad {
-    font-size: 22px;
+.team-box {
     background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-/* STAFF */
-.staff-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.staff-card {
-    background: #1e1e1e;
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px;
-    width: 200px;
-    transition: 0.3s;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
 }
 
-.staff-card:hover {
-    transform: scale(1.07);
-    background: #2c2c2c;
-}
-
-.staff-card img {
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border: 3px solid orange;
-}
-
-.staff-card h4 {
-    margin: 5px 0;
+.team-box h2 {
     color: orange;
+}
+
+.team-box p {
+    font-size: 18px;
+}
+
+.recordatorio {
+    margin-top: 30px;
+    padding: 20px;
+    background: #2c2c2c;
+    border-left: 5px solid red;
+    border-radius: 10px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- MENU -->
 <nav>
     <a href="index.html">Inicio</a>
     <a href="reglas.html">Reglas</a>
@@ -130,21 +113,56 @@ section {
     <a href="apelaciones.html">Apelaciones</a>
 </nav>
 
-<!-- BANNER SPAWN -->
+<!-- PRESENTACIÓN -->
 <div class="spawn-section">
     <div class="spawn-box">
-        <h1>🍊 FantaMC</h1>
-        <p>Servidor PvP - Survival Grands</p>
-        <p><strong>IP:</strong> play.fantamc.com</p>
+
+        <h1>⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️</h1>
+
+        <p><strong>Donde la estrategia y la fuerza definen tu legado.</strong></p>
+
+        <p>
+        Survival Grands no es solo un servidor; es un campo de batalla donde los clanes más poderosos 
+        luchan por la gloria, el control del territorio y el dominio del Top.
+        </p>
+
+        <p><strong>🌟 ¿QUÉ TE ESPERA?</strong></p>
+
+        <p>
+        🛡️ Guerra de Clanes Extrema<br>
+        🚩 KOTHs Desafiantes<br>
+        ⚖️ Transparencia y Justicia<br>
+        💰 Economía Equilibrada
+        </p>
+
+        <p><em>"Muchos entran, pero solo los más grandes sobreviven."</em></p>
 
         <a href="https://discord.gg/TUINVITE" target="_blank" class="discord-btn">
-            🔗 Unirse al Discord
+            🌐 ¡Únete ahora y escribe tu propia historia!
         </a>
+
     </div>
 </div>
 
-<!-- MODALIDAD -->
+<!-- EQUIPO -->
 <section>
-    <h2>⚔ Modalidad Activa</h2>
-    <div class="modalidad">
-        PvP C
+    <div class="team-box">
+
+        <h2>🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
+
+        <p>👑 <strong>OWNER:</strong> triqqew — Dirección General.</p>
+        <p>⚙️ <strong>ADMIN:</strong> dunv — Sistemas y Soporte Técnico.</p>
+        <p>📋 <strong>GESTIÓN:</strong> Scartleth — Eventos y Orden Interno.</p>
+        <p>⚔️ <strong>MOD:</strong> vDamage — Sanciones y Vigilancia.</p>
+        <p>🎫 <strong>SUPPORT:</strong> Jhoaraly — Atención al Usuario.</p>
+
+        <div class="recordatorio">
+            ⚠️ <strong>RECUERDA:</strong> Reportes y apelaciones únicamente vía Ticket.  
+            El Staff nunca pedirá tus datos personales.
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
